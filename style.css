@@ -19,6 +19,69 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Adicione em style.css */
+/* Estilos para a seção de equipe */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+/* Adicione em style.css */
+/* Estilos para estrelas de avaliação */
+.rating i {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating i.fas {
+    color: #ffc107;
+}
+
+.rating i.far {
+    color: #ddd;
+}
+
+.team-member {
+    background: var(--branco);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--sombra);
+    transition: transform 0.3s;
+    text-align: center;
+    padding: 30px;
+    max-width: 350px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--roxo-medio), var(--azul-medio));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 70px;
+    margin: 0 auto 20px;
+}
+
+.member-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.position {
+    color: var(--roxo-escuro);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
 body {
     background: linear-gradient(135deg, var(--roxo-claro), var(--azul-claro));
     color: var(--texto-escuro);
